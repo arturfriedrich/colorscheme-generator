@@ -3,7 +3,24 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <button id="kaki">Button</button>
-        <script src="index.js"></script>
+        <main>
+            <form id="form">
+                <input type="color" class="color-picker" id="color-picker">
+                <select name="schemes" id="schemes-select" class="schemes-select" >
+                    <option value="monochrome" selected="selected">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button id="generate-btn" type="submit" value="Submit">Get color scheme</button>
+            </form>
+            <div class="colors" id="colors-display"></div>
+            <div class="hex-values" id="hex-display"></div>
+        </main>
+    <script src="index.js"></script>
     </body>
 </html>
