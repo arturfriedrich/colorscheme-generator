@@ -21,6 +21,7 @@ main {
     width: 550px;
     height: 550px;
     background-color: #1F2937;
+    border-radius: 10px;
 }
 
 form {
